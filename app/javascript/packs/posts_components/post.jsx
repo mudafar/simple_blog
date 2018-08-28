@@ -29,6 +29,7 @@ export default class Post extends React.Component {
                 <td>{post.description}</td>
                 <td>
                     <Button onClick={this.handleDelete}
+                            block
                             disabled={!rootStore.isPersisted(post)}
                     >
                         Eliminar
